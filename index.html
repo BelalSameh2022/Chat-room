@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-room</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="socket.io/socket.io.js" defer></script>
+    <script src="client.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Chatroom</h2>
+                <div class="form-input">
+                    <label>User-name</label>
+                    <input id="userName" type="text" />
+                </div>
+                <button id="join-btn" class="btn">Join</button>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <header class="header">
+                <div class="logo">Chatroom</div>
+                <button id="exit-btn" class="btn">Exit</button>
+            </header>
+            <div class="messages"></div>
+            <div class="type-box">
+                <input id="message" type="text" placeholder="Message..." />
+                <button id="send-btn" class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
